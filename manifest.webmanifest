@@ -1,0 +1,12 @@
+{
+  "name": "水晶小舖管理系統",
+  "short_name": "水晶小舖",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf7ff",
+  "theme_color": "#6d28d9",
+  "icons": [
+    { "src": "images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

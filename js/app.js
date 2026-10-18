@@ -38,7 +38,8 @@ async function boot() {
   try {
     const s = await Store.session();
     if (!s) return show("login");
-    if ((await Store.assurance()) !== "aal2") return startMfa();
+    // 已依使用者決定取消兩步驟驗證；要恢復時把下一行的註解拿掉，並套用資料庫的 aal2 版本 is_owner()
+    // if ((await Store.assurance()) !== "aal2") return startMfa();
     if (!(await Store.isOwner())) return show("noaccess");
     show("app");
     route();
